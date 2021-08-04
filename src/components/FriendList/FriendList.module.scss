@@ -1,0 +1,30 @@
+@import "../../utils/variables.scss";
+
+.item {
+  width: 400px;
+  height: 110px;
+  margin-bottom: 20px;
+  box-shadow: 0 3px 5px $third-component-shadow;
+  border-radius: 1%;
+  display: flex;
+  align-items: center;
+  background-color: $third-component-background;
+}
+
+.status {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-left: 16px;
+}
+
+.statusGreen {
+  composes: status;
+  background-color: $third-component-status-online;
+}
+
+.statusRed {
+  composes: status;
+  background-color: $third-component-status-offline;
+}

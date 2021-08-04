@@ -1,0 +1,36 @@
+@import "../../utils/variables.scss";
+
+table {
+  font-family: Sans-Serif;
+  text-align: left;
+  border-collapse: collapse;
+  background: $forth-component-table-background;
+  color: $forth-component-header-text-color;
+  border-radius: 4px;
+  table-layout: fixed;
+  width: 550px;
+  box-shadow: 0 3px 5px $third-component-shadow;
+}
+
+th {
+  font-size: 18px;
+  padding: 10px;
+  text-align: center;
+  background-color: $first-component-header-background;
+  text-transform: uppercase;
+  font-size: 0.6em;
+  border: 1px solid $forth-component-header-text-color;
+}
+
+tbody tr:nth-child(2n) {
+  background-color: $forth-component-header-text-color;
+}
+
+td {
+  padding: 10px;
+  border: 1px solid $forth-component-table-background;
+  color: $forth-component-odd-data-color;
+  width: 50px;
+  text-align: center;
+  font-size: 0.6em;
+}
